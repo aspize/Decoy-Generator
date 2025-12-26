@@ -1,0 +1,67 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decoy Generator</title>
+
+  <link rel="icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Decoy Generator</h1>
+    </header>
+
+    <section class="grid">
+      <section class="card results" aria-label="Generated identity">
+        <div class="cardHead">
+          <h2>Output</h2>
+        </div>
+
+        <div class="fields">
+          <div class="field">
+            <div class="meta">
+              <div class="label">Full Name</div>
+              <div class="value" id="fullName">—</div>
+            </div>
+            <button class="btn ghost" id="copyNameBtn" type="button">Copy</button>
+          </div>
+
+          <div class="field">
+            <div class="meta">
+              <div class="label">Username</div>
+              <div class="value" id="username">—</div>
+            </div>
+            <button class="btn ghost" id="copyUserBtn" type="button">Copy</button>
+          </div>
+
+          <div class="field">
+            <div class="meta">
+              <div class="label">Date of Birth</div>
+              <div class="value" id="dob">—</div>
+            </div>
+            <button class="btn ghost" id="copyDobBtn" type="button">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card controls" aria-label="Actions">
+        <div class="cardHead">
+          <h2>Actions</h2>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary" id="generateBtn" type="button">Generate</button>
+          <button class="btn" id="copyAllBtn" type="button">Copy all</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
